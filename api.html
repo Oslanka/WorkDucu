@@ -8934,7 +8934,7 @@
   "type": "object",
   "properties": {
     "statusCountList":{
-      "description": "订单状态数目",
+      "description": "订单状态数目,JSON序列化格式",
       "type": "string",
       "required": false
     },
@@ -9126,12 +9126,12 @@
   "description" : "下单",
   "type": "object",
   "properties": {
-    "channelSource": {
+    "channel": {
       "description": "订单渠道-拉手商城",
       "type": "string",
       "required": false
     },
-    "channelSourceCode": {
+    "channelCode": {
       "description": "订单渠道码-lsmall",
       "type": "string",
       "required": false
@@ -9140,11 +9140,6 @@
       "description": "支付类型-alipay",
       "type": "string",
       "required": true
-    },
-    "guid": {
-      "description": "用户ID，不需要外部传入，会从header里获取",
-      "type": "string",
-      "required": false
     },
     "originalOrderId": {
       "description": "第三方订单ID",
@@ -9159,11 +9154,6 @@
     "orderAmount": {
       "description": "订单金额",
       "type": "number",
-      "required": false
-    },
-    "creatTime": {
-      "description": "订单创建时间",
-      "type": "string",
       "required": false
     }
   }
@@ -9182,7 +9172,12 @@
       }
     },
     "paymentStr": {
-      "description": "支付数据串",
+      "description": "支付数据",
+      "type": "string",
+      "required": false
+    },
+    "paymentType": {
+      "description": "支付数据类型",
       "type": "string",
       "required": false
     }
@@ -9389,17 +9384,17 @@
       "type": "number",
       "required": false
     },
-    "channelSource": {
+    "channel": {
       "description": "订单渠道",
       "type": "string",
       "required": false
     },
-    "channelSourceCode": {
+    "channelCode": {
       "description": "订单渠道码",
       "type": "string",
       "required": false
     },
-    "creatTime": {
+    "creationTime": {
       "description": "订单创建时间",
       "type": "string",
       "required": false
@@ -9689,7 +9684,7 @@
       "type": "string",
       "required": false
     },
-    "nextSteps": {
+    "nextActions": {
       "description": "订单下一步动作",
       "type": "string",
       "required": false
@@ -9848,22 +9843,22 @@
   "description": "会员订单退款申请",
   "properties": {
     "orderId": {
-      "description": "订单ID",
+      "description": "需要退款订单ID",
       "type": "string",
       "required": false
     },
     "channel": {
-      "description": "渠道",
+      "description": "订单渠道",
       "type": "string",
       "required": false
     },
     "channelCode": {
-      "description": "渠道码",
+      "description": "订单渠道码",
       "type": "string",
       "required": false
     },
     "refundProductIds": {
-      "description": "申请退款的商品ID列表",
+      "description": "申请退款的商品ID列表,如果是整单退款，则不需要传该参数",
       "type": "string",
       "required": false
     },
@@ -9873,21 +9868,19 @@
       "required": false
     },
     "refundType": {
-      "description": "退款类型",
+      "description": "退款类型:退货、退款",
       "type": "string",
       "required": false
     },
-    "refundReasonId": {
-      "description": "退款理由选项id",
+    "guid": {
+      "description": "guid",
       "type": "string",
       "required": false
     },
     "refundImages": {
       "description": "退款理由图片",
-      "type": "array",
-      "items":{
-      	"type":"string"
-      }
+      "type": "string",
+      "required": false
     }
   }
 }
@@ -9922,7 +9915,7 @@
       "type": "string",
       "required": false
     },
-    "nextSteps": {
+    "nextActions": {
       "description": "订单下一步动作",
       "type": "string",
       "required": false
@@ -10143,7 +10136,7 @@
       "type": "string",
       "required": false
     },
-    "nextSteps": {
+    "nextActions": {
       "description": "订单下一步动作",
       "type": "string",
       "required": false
@@ -16035,7 +16028,7 @@
       "type": "string",
       "required": false
     },
-    "memberId":{
+    "guid":{
       "description": "会员ID",
       "type": "string",
       "required": false
@@ -16052,6 +16045,21 @@
     },
     "expressContractorCode": {
       "description": "快递商家code",
+      "type": "string",
+      "required": false
+    },
+    "supplierId":{
+      "description": "发货商家ID",
+      "type": "string",
+      "required": false
+    },
+    "supplierSource":{
+      "description": "发货商家来源",
+      "type": "string",
+      "required": false
+    },
+    "supplierInfo": {
+      "description": "发货商家信息",
       "type": "string",
       "required": false
     }
