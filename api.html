@@ -8731,7 +8731,7 @@
     }
   }
 }
-</code></pre></div><div class="tab-pane" id="members__member_id__notifications_management__messagetype_id__post_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2></div><div class="tab-pane" id="members__member_id__notifications_management__messagetype_id__post_securedby"><h1>Secured by oauth_2_0</h1><h3>Headers</h3><ul><li><strong>Authorization</strong>: <em>(string)</em><p>通常发送一个有效的OAuth 2的access token.不要和queryParameters里的access_token同时使用</p></li></ul><h2>HTTP status code <a href="http://httpstatus.es/401" target="_blank">401</a></h2><p>错误或过期的token. 如果用户或Dropbox撤销或过期了访问令牌，就会发生这种情况。要解决此问题，您应该重新验证用户</p><h2>HTTP status code <a href="http://httpstatus.es/403" target="_blank">403</a></h2><p>错误的OAuth请求 (wrong consumer key, bad nonce, expired timestamp...). 不幸的是，重新验证用户也不会起作用</p></div></div></div></div></div></div><div class="modal fade" tabindex="0" id="members__member_id__notifications_management__messagetype_id__delete"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_delete">delete <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span> <span class="parent">/members/{member_id}/notifications/management</span>/{messagetype_id}</h4></div><div class="modal-body"><div class="alert alert-info"><p>删除提醒</p></div><div class="alert alert-warning"><span class="glyphicon glyphicon-lock" title="Authentication required"></span> Secured by <b>oauth_2_0</b><p>系统支持 OAuth 2.0 来验证所有的APIs</p></div><ul class="nav nav-tabs"><li class="active"><a href="#members__member_id__notifications_management__messagetype_id__delete_request" data-toggle="tab">Request</a></li><li><a href="#members__member_id__notifications_management__messagetype_id__delete_response" data-toggle="tab">Response</a></li><li><a href="#members__member_id__notifications_management__messagetype_id__delete_securedby" data-toggle="tab">Security</a></li></ul><div class="tab-content"><div class="tab-pane active" id="members__member_id__notifications_management__messagetype_id__delete_request"><h3>URI Parameters</h3><ul><li><strong>member_id</strong>: <em>required (string)</em></li><li><strong>messagetype_id</strong>: <em>required (string)</em></li></ul><h3>Headers</h3><ul><li><strong>x-la-authorization</strong>: <em>(string)</em><p>使用 oauth2.0 的方式获取access_token</p></li><li><strong>x-la-session</strong>: <em>(string)</em><p>当前用户的sessionId</p></li></ul></div><div class="tab-pane" id="members__member_id__notifications_management__messagetype_id__delete_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2></div><div class="tab-pane" id="members__member_id__notifications_management__messagetype_id__delete_securedby"><h1>Secured by oauth_2_0</h1><h3>Headers</h3><ul><li><strong>Authorization</strong>: <em>(string)</em><p>通常发送一个有效的OAuth 2的access token.不要和queryParameters里的access_token同时使用</p></li></ul><h2>HTTP status code <a href="http://httpstatus.es/401" target="_blank">401</a></h2><p>错误或过期的token. 如果用户或Dropbox撤销或过期了访问令牌，就会发生这种情况。要解决此问题，您应该重新验证用户</p><h2>HTTP status code <a href="http://httpstatus.es/403" target="_blank">403</a></h2><p>错误的OAuth请求 (wrong consumer key, bad nonce, expired timestamp...). 不幸的是，重新验证用户也不会起作用</p></div></div></div></div></div></div></div><div class="panel panel-white"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_members__member_id__orders"><span class="parent">/members/{member_id}</span>/orders</a> <span class="methods"><a href="#members__member_id__orders_get"><span class="badge badge_get">get <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span></a></span></h4></div><div id="panel_members__member_id__orders" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#members__member_id__orders_get'" class="list-group-item"><span class="badge badge_get">get <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span><div class="method_description"><p>查询订单列表</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="members__member_id__orders_get"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span> <span class="parent">/members/{member_id}</span>/orders</h4></div><div class="modal-body"><div class="alert alert-info"><p>查询订单列表</p></div><div class="alert alert-warning"><span class="glyphicon glyphicon-lock" title="Authentication required"></span> Secured by <b>oauth_2_0</b><p>系统支持 OAuth 2.0 来验证所有的APIs</p></div><ul class="nav nav-tabs"><li class="active"><a href="#members__member_id__orders_get_request" data-toggle="tab">Request</a></li><li><a href="#members__member_id__orders_get_response" data-toggle="tab">Response</a></li><li><a href="#members__member_id__orders_get_securedby" data-toggle="tab">Security</a></li></ul><div class="tab-content"><div class="tab-pane active" id="members__member_id__orders_get_request"><h3>URI Parameters</h3><ul><li><strong>member_id</strong>: <em>required (string)</em></li></ul><h3>Headers</h3><ul><li><strong>x-la-authorization</strong>: <em>(string)</em><p>使用 oauth2.0 的方式获取access_token</p></li><li><strong>x-la-session</strong>: <em>(string)</em><p>当前用户的sessionId</p></li><li><strong>x-la-format</strong>: <em>required (one of json)</em><p>系统响应的数据格式，目前只有JSON一种</p></li><li><strong>x-la-app-key</strong>: <em>required (string)</em><p>系统分配给客户端的唯一标识</p></li><li><strong>x-la-sign-method</strong>: <em>required (one of MD5)</em><p>系统参数签名方式</p></li><li><strong>guid</strong>: <em>required (string)</em><p>用户ID</p></li></ul><h3>Query Parameters</h3><ul><li><strong>count</strong>: <em>(integer - default: 10)</em><p>当前页所展示的数据个数</p><p><strong>Example</strong>:</p><pre><code>10</code></pre></li><li><strong>start</strong>: <em>(integer - default: 1)</em><p>开始页，默认从第一页开始</p><p><strong>Example</strong>:</p><pre><code>1</code></pre></li><li><strong>sign</strong>: <em>required (string)</em><p>对参数进行签名后的值，用来防止参数被篡改</p></li><li><strong>status</strong>: <em>(string)</em></li></ul></div><div class="tab-pane" id="members__member_id__orders_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><p>请求成功</p><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+</code></pre></div><div class="tab-pane" id="members__member_id__notifications_management__messagetype_id__post_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2></div><div class="tab-pane" id="members__member_id__notifications_management__messagetype_id__post_securedby"><h1>Secured by oauth_2_0</h1><h3>Headers</h3><ul><li><strong>Authorization</strong>: <em>(string)</em><p>通常发送一个有效的OAuth 2的access token.不要和queryParameters里的access_token同时使用</p></li></ul><h2>HTTP status code <a href="http://httpstatus.es/401" target="_blank">401</a></h2><p>错误或过期的token. 如果用户或Dropbox撤销或过期了访问令牌，就会发生这种情况。要解决此问题，您应该重新验证用户</p><h2>HTTP status code <a href="http://httpstatus.es/403" target="_blank">403</a></h2><p>错误的OAuth请求 (wrong consumer key, bad nonce, expired timestamp...). 不幸的是，重新验证用户也不会起作用</p></div></div></div></div></div></div><div class="modal fade" tabindex="0" id="members__member_id__notifications_management__messagetype_id__delete"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_delete">delete <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span> <span class="parent">/members/{member_id}/notifications/management</span>/{messagetype_id}</h4></div><div class="modal-body"><div class="alert alert-info"><p>删除提醒</p></div><div class="alert alert-warning"><span class="glyphicon glyphicon-lock" title="Authentication required"></span> Secured by <b>oauth_2_0</b><p>系统支持 OAuth 2.0 来验证所有的APIs</p></div><ul class="nav nav-tabs"><li class="active"><a href="#members__member_id__notifications_management__messagetype_id__delete_request" data-toggle="tab">Request</a></li><li><a href="#members__member_id__notifications_management__messagetype_id__delete_response" data-toggle="tab">Response</a></li><li><a href="#members__member_id__notifications_management__messagetype_id__delete_securedby" data-toggle="tab">Security</a></li></ul><div class="tab-content"><div class="tab-pane active" id="members__member_id__notifications_management__messagetype_id__delete_request"><h3>URI Parameters</h3><ul><li><strong>member_id</strong>: <em>required (string)</em></li><li><strong>messagetype_id</strong>: <em>required (string)</em></li></ul><h3>Headers</h3><ul><li><strong>x-la-authorization</strong>: <em>(string)</em><p>使用 oauth2.0 的方式获取access_token</p></li><li><strong>x-la-session</strong>: <em>(string)</em><p>当前用户的sessionId</p></li></ul></div><div class="tab-pane" id="members__member_id__notifications_management__messagetype_id__delete_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2></div><div class="tab-pane" id="members__member_id__notifications_management__messagetype_id__delete_securedby"><h1>Secured by oauth_2_0</h1><h3>Headers</h3><ul><li><strong>Authorization</strong>: <em>(string)</em><p>通常发送一个有效的OAuth 2的access token.不要和queryParameters里的access_token同时使用</p></li></ul><h2>HTTP status code <a href="http://httpstatus.es/401" target="_blank">401</a></h2><p>错误或过期的token. 如果用户或Dropbox撤销或过期了访问令牌，就会发生这种情况。要解决此问题，您应该重新验证用户</p><h2>HTTP status code <a href="http://httpstatus.es/403" target="_blank">403</a></h2><p>错误的OAuth请求 (wrong consumer key, bad nonce, expired timestamp...). 不幸的是，重新验证用户也不会起作用</p></div></div></div></div></div></div></div><div class="panel panel-white"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_members__member_id__orders"><span class="parent">/members/{member_id}</span>/orders</a> <span class="methods"><a href="#members__member_id__orders_get"><span class="badge badge_get">get <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span></a></span></h4></div><div id="panel_members__member_id__orders" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#members__member_id__orders_get'" class="list-group-item"><span class="badge badge_get">get <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span><div class="method_description"><p>查询订单列表</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="members__member_id__orders_get"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span> <span class="parent">/members/{member_id}</span>/orders</h4></div><div class="modal-body"><div class="alert alert-info"><p>查询订单列表</p></div><div class="alert alert-warning"><span class="glyphicon glyphicon-lock" title="Authentication required"></span> Secured by <b>oauth_2_0</b><p>系统支持 OAuth 2.0 来验证所有的APIs</p></div><ul class="nav nav-tabs"><li class="active"><a href="#members__member_id__orders_get_request" data-toggle="tab">Request</a></li><li><a href="#members__member_id__orders_get_response" data-toggle="tab">Response</a></li><li><a href="#members__member_id__orders_get_securedby" data-toggle="tab">Security</a></li></ul><div class="tab-content"><div class="tab-pane active" id="members__member_id__orders_get_request"><h3>URI Parameters</h3><ul><li><strong>member_id</strong>: <em>required (string)</em></li></ul><h3>Headers</h3><ul><li><strong>x-la-authorization</strong>: <em>(string)</em><p>使用 oauth2.0 的方式获取access_token</p></li><li><strong>x-la-session</strong>: <em>(string)</em><p>当前用户的sessionId</p></li><li><strong>x-la-format</strong>: <em>required (one of json)</em><p>系统响应的数据格式，目前只有JSON一种</p></li><li><strong>x-la-app-key</strong>: <em>required (string)</em><p>系统分配给客户端的唯一标识</p></li><li><strong>x-la-sign-method</strong>: <em>required (one of MD5)</em><p>系统参数签名方式</p></li><li><strong>guid</strong>: <em>required (string)</em><p>用户ID</p></li></ul><h3>Query Parameters</h3><ul><li><strong>count</strong>: <em>(integer - default: 10)</em><p>当前页所展示的数据个数</p><p><strong>Example</strong>:</p><pre><code>10</code></pre></li><li><strong>start</strong>: <em>(integer - default: 1)</em><p>开始页，默认从第一页开始</p><p><strong>Example</strong>:</p><pre><code>1</code></pre></li><li><strong>sign</strong>: <em>required (string)</em><p>对参数进行签名后的值，用来防止参数被篡改</p></li><li><strong>status</strong>: <em>(string)</em><p>processing-进行中，done-待评价，all-全部</p></li></ul></div><div class="tab-pane" id="members__member_id__orders_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><p>请求成功</p><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
   "required": true,
   "$schema": "http://json-schema.org/draft-03/schema",
   "javaType" : "org.nextspace.platform.api.gateway.model.Orders",
@@ -8745,9 +8745,14 @@
         "$ref": "order"
       }
     },
+    "statusCountList":{
+      "description": "订单状态数目,JSON序列化格式",
+      "type": "string",
+      "required": false
+    },
     "totalCount": {
       "description": "总数量",
-      "type": "integer",
+      "type": "string",
       "required": false
     }
   }
@@ -8927,7 +8932,7 @@
   "status": 401,
   "timestamp": 1378122137646
 }
-</code></pre></div><div class="tab-pane" id="members__member_id__orders_get_securedby"><h1>Secured by oauth_2_0</h1><h3>Headers</h3><ul><li><strong>Authorization</strong>: <em>(string)</em><p>通常发送一个有效的OAuth 2的access token.不要和queryParameters里的access_token同时使用</p></li></ul><h2>HTTP status code <a href="http://httpstatus.es/401" target="_blank">401</a></h2><p>错误或过期的token. 如果用户或Dropbox撤销或过期了访问令牌，就会发生这种情况。要解决此问题，您应该重新验证用户</p><h2>HTTP status code <a href="http://httpstatus.es/403" target="_blank">403</a></h2><p>错误的OAuth请求 (wrong consumer key, bad nonce, expired timestamp...). 不幸的是，重新验证用户也不会起作用</p></div></div></div></div></div></div></div><div class="panel panel-white"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_members__member_id__orders_statuscountlist"><span class="parent">/members/{member_id}/orders</span>/statuscountlist</a> <span class="methods"><a href="#members__member_id__orders_statuscountlist_get"><span class="badge badge_get">get <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span></a></span></h4></div><div id="panel_members__member_id__orders_statuscountlist" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#members__member_id__orders_statuscountlist_get'" class="list-group-item"><span class="badge badge_get">get <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span><div class="method_description"><p>订单状态数字列表</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="members__member_id__orders_statuscountlist_get"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span> <span class="parent">/members/{member_id}/orders</span>/statuscountlist</h4></div><div class="modal-body"><div class="alert alert-info"><p>订单状态数字列表</p></div><div class="alert alert-warning"><span class="glyphicon glyphicon-lock" title="Authentication required"></span> Secured by <b>oauth_2_0</b><p>系统支持 OAuth 2.0 来验证所有的APIs</p></div><ul class="nav nav-tabs"><li class="active"><a href="#members__member_id__orders_statuscountlist_get_request" data-toggle="tab">Request</a></li><li><a href="#members__member_id__orders_statuscountlist_get_response" data-toggle="tab">Response</a></li><li><a href="#members__member_id__orders_statuscountlist_get_securedby" data-toggle="tab">Security</a></li></ul><div class="tab-content"><div class="tab-pane active" id="members__member_id__orders_statuscountlist_get_request"><h3>URI Parameters</h3><ul><li><strong>member_id</strong>: <em>required (string)</em></li></ul><h3>Headers</h3><ul><li><strong>x-la-authorization</strong>: <em>(string)</em><p>使用 oauth2.0 的方式获取access_token</p></li><li><strong>x-la-session</strong>: <em>(string)</em><p>当前用户的sessionId</p></li><li><strong>x-la-format</strong>: <em>required (one of json)</em><p>系统响应的数据格式，目前只有JSON一种</p></li><li><strong>x-la-app-key</strong>: <em>required (string)</em><p>系统分配给客户端的唯一标识</p></li><li><strong>x-la-sign-method</strong>: <em>required (one of MD5)</em><p>系统参数签名方式</p></li><li><strong>guid</strong>: <em>required (string)</em><p>用户ID</p></li></ul><h3>Query Parameters</h3><ul><li><strong>sign</strong>: <em>required (string)</em><p>对参数进行签名后的值，用来防止参数被篡改</p></li><li><strong>status</strong>: <em>(string)</em></li></ul></div><div class="tab-pane" id="members__member_id__orders_statuscountlist_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><p>请求成功</p><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+</code></pre></div><div class="tab-pane" id="members__member_id__orders_get_securedby"><h1>Secured by oauth_2_0</h1><h3>Headers</h3><ul><li><strong>Authorization</strong>: <em>(string)</em><p>通常发送一个有效的OAuth 2的access token.不要和queryParameters里的access_token同时使用</p></li></ul><h2>HTTP status code <a href="http://httpstatus.es/401" target="_blank">401</a></h2><p>错误或过期的token. 如果用户或Dropbox撤销或过期了访问令牌，就会发生这种情况。要解决此问题，您应该重新验证用户</p><h2>HTTP status code <a href="http://httpstatus.es/403" target="_blank">403</a></h2><p>错误的OAuth请求 (wrong consumer key, bad nonce, expired timestamp...). 不幸的是，重新验证用户也不会起作用</p></div></div></div></div></div></div></div><div class="panel panel-white"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_members__member_id__orders_statuscountlist"><span class="parent">/members/{member_id}/orders</span>/statuscountlist</a> <span class="methods"><a href="#members__member_id__orders_statuscountlist_get"><span class="badge badge_get">get <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span></a></span></h4></div><div id="panel_members__member_id__orders_statuscountlist" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#members__member_id__orders_statuscountlist_get'" class="list-group-item"><span class="badge badge_get">get <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span><div class="method_description"><p>订单状态数字列表</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="members__member_id__orders_statuscountlist_get"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span> <span class="parent">/members/{member_id}/orders</span>/statuscountlist</h4></div><div class="modal-body"><div class="alert alert-info"><p>订单状态数字列表</p></div><div class="alert alert-warning"><span class="glyphicon glyphicon-lock" title="Authentication required"></span> Secured by <b>oauth_2_0</b><p>系统支持 OAuth 2.0 来验证所有的APIs</p></div><ul class="nav nav-tabs"><li class="active"><a href="#members__member_id__orders_statuscountlist_get_request" data-toggle="tab">Request</a></li><li><a href="#members__member_id__orders_statuscountlist_get_response" data-toggle="tab">Response</a></li><li><a href="#members__member_id__orders_statuscountlist_get_securedby" data-toggle="tab">Security</a></li></ul><div class="tab-content"><div class="tab-pane active" id="members__member_id__orders_statuscountlist_get_request"><h3>URI Parameters</h3><ul><li><strong>member_id</strong>: <em>required (string)</em></li></ul><h3>Headers</h3><ul><li><strong>x-la-authorization</strong>: <em>(string)</em><p>使用 oauth2.0 的方式获取access_token</p></li><li><strong>x-la-session</strong>: <em>(string)</em><p>当前用户的sessionId</p></li><li><strong>x-la-format</strong>: <em>required (one of json)</em><p>系统响应的数据格式，目前只有JSON一种</p></li><li><strong>x-la-app-key</strong>: <em>required (string)</em><p>系统分配给客户端的唯一标识</p></li><li><strong>x-la-sign-method</strong>: <em>required (one of MD5)</em><p>系统参数签名方式</p></li><li><strong>guid</strong>: <em>required (string)</em><p>用户ID</p></li></ul><h3>Query Parameters</h3><ul><li><strong>sign</strong>: <em>required (string)</em><p>对参数进行签名后的值，用来防止参数被篡改</p></li><li><strong>status</strong>: <em>(string)</em><p>processing-进行中，done-待评价，all-全部</p></li></ul></div><div class="tab-pane" id="members__member_id__orders_statuscountlist_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><p>请求成功</p><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
   "$schema": "http://json-schema.org/draft-03/schema",
   "javaType" : "org.nextspace.platform.api.gateway.model.MemberOrderStatusCountsList",
   "description" : "订单状态数目",
@@ -9441,7 +9446,7 @@
       "type": "object",
       "$ref": "order-payment-info"
     },
-    "orderActionInfo": {
+    "orderActionInfos": {
       "description": "订单历史动作信息列表",
       "type": "array",
       "items": {
@@ -9452,6 +9457,13 @@
       "description": "订单当前动作列表",
       "type": "string",
       "required": false
+    },
+    "subOrders": {
+      "description": "子订单",
+      "type": "array",
+      "items": {
+        "$ref": "order"
+      }
     }
   }
 }
@@ -9630,7 +9642,373 @@
   "status": 401,
   "timestamp": 1378122137646
 }
-</code></pre></div><div class="tab-pane" id="members__member_id__orders__order_id__get_securedby"><h1>Secured by oauth_2_0</h1><h3>Headers</h3><ul><li><strong>Authorization</strong>: <em>(string)</em><p>通常发送一个有效的OAuth 2的access token.不要和queryParameters里的access_token同时使用</p></li></ul><h2>HTTP status code <a href="http://httpstatus.es/401" target="_blank">401</a></h2><p>错误或过期的token. 如果用户或Dropbox撤销或过期了访问令牌，就会发生这种情况。要解决此问题，您应该重新验证用户</p><h2>HTTP status code <a href="http://httpstatus.es/403" target="_blank">403</a></h2><p>错误的OAuth请求 (wrong consumer key, bad nonce, expired timestamp...). 不幸的是，重新验证用户也不会起作用</p></div></div></div></div></div></div></div><div class="panel panel-white"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_members__member_id__orders__order_id__confirmreceived"><span class="parent">/members/{member_id}/orders/{order_id}</span>/confirmreceived</a> <span class="methods"><a href="#members__member_id__orders__order_id__confirmreceived_post"><span class="badge badge_post">post <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span></a></span></h4></div><div id="panel_members__member_id__orders__order_id__confirmreceived" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#members__member_id__orders__order_id__confirmreceived_post'" class="list-group-item"><span class="badge badge_post">post <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span><div class="method_description"><p>确认订单收货</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="members__member_id__orders__order_id__confirmreceived_post"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_post">post <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span> <span class="parent">/members/{member_id}/orders/{order_id}</span>/confirmreceived</h4></div><div class="modal-body"><div class="alert alert-info"><p>确认订单收货</p></div><div class="alert alert-warning"><span class="glyphicon glyphicon-lock" title="Authentication required"></span> Secured by <b>oauth_2_0</b><p>系统支持 OAuth 2.0 来验证所有的APIs</p></div><ul class="nav nav-tabs"><li class="active"><a href="#members__member_id__orders__order_id__confirmreceived_post_request" data-toggle="tab">Request</a></li><li><a href="#members__member_id__orders__order_id__confirmreceived_post_response" data-toggle="tab">Response</a></li><li><a href="#members__member_id__orders__order_id__confirmreceived_post_securedby" data-toggle="tab">Security</a></li></ul><div class="tab-content"><div class="tab-pane active" id="members__member_id__orders__order_id__confirmreceived_post_request"><h3>URI Parameters</h3><ul><li><strong>member_id</strong>: <em>required (string)</em></li><li><strong>order_id</strong>: <em>required (string)</em></li></ul><h3>Headers</h3><ul><li><strong>x-la-authorization</strong>: <em>(string)</em><p>使用 oauth2.0 的方式获取access_token</p></li><li><strong>x-la-session</strong>: <em>(string)</em><p>当前用户的sessionId</p></li><li><strong>x-la-format</strong>: <em>required (one of json)</em><p>系统响应的数据格式，目前只有JSON一种</p></li><li><strong>x-la-app-key</strong>: <em>required (string)</em><p>系统分配给客户端的唯一标识</p></li><li><strong>x-la-sign-method</strong>: <em>required (one of MD5)</em><p>系统参数签名方式</p></li><li><strong>guid</strong>: <em>required (string)</em><p>用户ID</p></li></ul><h3>Query Parameters</h3><ul><li><strong>sign</strong>: <em>required (string)</em><p>对参数进行签名后的值，用来防止参数被篡改</p></li></ul><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+</code></pre></div><div class="tab-pane" id="members__member_id__orders__order_id__get_securedby"><h1>Secured by oauth_2_0</h1><h3>Headers</h3><ul><li><strong>Authorization</strong>: <em>(string)</em><p>通常发送一个有效的OAuth 2的access token.不要和queryParameters里的access_token同时使用</p></li></ul><h2>HTTP status code <a href="http://httpstatus.es/401" target="_blank">401</a></h2><p>错误或过期的token. 如果用户或Dropbox撤销或过期了访问令牌，就会发生这种情况。要解决此问题，您应该重新验证用户</p><h2>HTTP status code <a href="http://httpstatus.es/403" target="_blank">403</a></h2><p>错误的OAuth请求 (wrong consumer key, bad nonce, expired timestamp...). 不幸的是，重新验证用户也不会起作用</p></div></div></div></div></div></div></div><div class="panel panel-white"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_members__member_id__orders__order_id__cancel"><span class="parent">/members/{member_id}/orders/{order_id}</span>/cancel</a> <span class="methods"><a href="#members__member_id__orders__order_id__cancel_post"><span class="badge badge_post">post <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span></a></span></h4></div><div id="panel_members__member_id__orders__order_id__cancel" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#members__member_id__orders__order_id__cancel_post'" class="list-group-item"><span class="badge badge_post">post <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span><div class="method_description"><p>取消订单</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="members__member_id__orders__order_id__cancel_post"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_post">post <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span> <span class="parent">/members/{member_id}/orders/{order_id}</span>/cancel</h4></div><div class="modal-body"><div class="alert alert-info"><p>取消订单</p></div><div class="alert alert-warning"><span class="glyphicon glyphicon-lock" title="Authentication required"></span> Secured by <b>oauth_2_0</b><p>系统支持 OAuth 2.0 来验证所有的APIs</p></div><ul class="nav nav-tabs"><li class="active"><a href="#members__member_id__orders__order_id__cancel_post_request" data-toggle="tab">Request</a></li><li><a href="#members__member_id__orders__order_id__cancel_post_response" data-toggle="tab">Response</a></li><li><a href="#members__member_id__orders__order_id__cancel_post_securedby" data-toggle="tab">Security</a></li></ul><div class="tab-content"><div class="tab-pane active" id="members__member_id__orders__order_id__cancel_post_request"><h3>URI Parameters</h3><ul><li><strong>member_id</strong>: <em>required (string)</em></li><li><strong>order_id</strong>: <em>required (string)</em></li></ul><h3>Headers</h3><ul><li><strong>x-la-authorization</strong>: <em>(string)</em><p>使用 oauth2.0 的方式获取access_token</p></li><li><strong>x-la-session</strong>: <em>(string)</em><p>当前用户的sessionId</p></li><li><strong>x-la-format</strong>: <em>required (one of json)</em><p>系统响应的数据格式，目前只有JSON一种</p></li><li><strong>x-la-app-key</strong>: <em>required (string)</em><p>系统分配给客户端的唯一标识</p></li><li><strong>x-la-sign-method</strong>: <em>required (one of MD5)</em><p>系统参数签名方式</p></li><li><strong>guid</strong>: <em>required (string)</em><p>用户ID</p></li></ul><h3>Query Parameters</h3><ul><li><strong>sign</strong>: <em>required (string)</em><p>对参数进行签名后的值，用来防止参数被篡改</p></li></ul></div><div class="tab-pane" id="members__member_id__orders__order_id__cancel_post_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><p>请求成功</p><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "javaType" : "org.nextspace.platform.api.gateway.model.MemberOrderOperatorResult",
+  "type": "object",
+  "description": "会员订单操作结果",
+  "properties": {
+    "orderId": {
+      "description": "订单ID",
+      "type": "string",
+      "required": false
+    },
+    "channel": {
+      "description": "渠道",
+      "type": "string",
+      "required": false
+    },
+    "channelCode": {
+      "description": "渠道码",
+      "type": "string",
+      "required": false
+    },
+    "result": {
+      "description": "结果",
+      "type": "string",
+      "required": false
+    },
+    "errMessage": {
+      "description": "失败消息",
+      "type": "string",
+      "required": false
+    },
+    "nextActions": {
+      "description": "订单下一步动作",
+      "type": "string",
+      "required": false
+    }
+  }
+}
+</code></pre><h2>HTTP status code <a href="http://httpstatus.es/400" target="_blank">400</a></h2><p>参数格式不正确或参数个数不正确</p><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+  "description": "错误，请求错误时返回",
+  "required": false,
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "javaType" : "org.nextspace.platform.api.gateway.model.Error",
+  "type": "object",
+  "properties" :{
+    "errorCode" : {
+        "description": "错误码",
+        "type": "integer",
+        "required": false
+    },
+    "message": {
+        "description": "错误信息",
+        "type": "string",
+        "required": false
+    },
+    "status": {
+        "description": "状态码",
+        "type": "integer",
+        "required": false
+    },
+    "timestamp": {
+        "description": "时间戳",
+        "type": "integer",
+        "required": false
+    }
+  }
+}
+</code></pre><h2>HTTP status code <a href="http://httpstatus.es/401" target="_blank">401</a></h2><p>OAuth签名不正确</p><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+  "description": "错误，请求错误时返回",
+  "required": false,
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "javaType" : "org.nextspace.platform.api.gateway.model.Error",
+  "type": "object",
+  "properties" :{
+    "errorCode" : {
+        "description": "错误码",
+        "type": "integer",
+        "required": false
+    },
+    "message": {
+        "description": "错误信息",
+        "type": "string",
+        "required": false
+    },
+    "status": {
+        "description": "状态码",
+        "type": "integer",
+        "required": false
+    },
+    "timestamp": {
+        "description": "时间戳",
+        "type": "integer",
+        "required": false
+    }
+  }
+}
+</code></pre><h2>HTTP status code <a href="http://httpstatus.es/403" target="_blank">403</a></h2><p>对资源的访问被拒绝。通常这意味着当前请求被限制。也可能是你没有访问此资源的权限</p><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+  "description": "错误，请求错误时返回",
+  "required": false,
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "javaType" : "org.nextspace.platform.api.gateway.model.Error",
+  "type": "object",
+  "properties" :{
+    "errorCode" : {
+        "description": "错误码",
+        "type": "integer",
+        "required": false
+    },
+    "message": {
+        "description": "错误信息",
+        "type": "string",
+        "required": false
+    },
+    "status": {
+        "description": "状态码",
+        "type": "integer",
+        "required": false
+    },
+    "timestamp": {
+        "description": "时间戳",
+        "type": "integer",
+        "required": false
+    }
+  }
+}
+</code></pre><h2>HTTP status code <a href="http://httpstatus.es/404" target="_blank">404</a></h2><p>资源不存在或当前访问的资源对象不存在</p><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+  "description": "错误，请求错误时返回",
+  "required": false,
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "javaType" : "org.nextspace.platform.api.gateway.model.Error",
+  "type": "object",
+  "properties" :{
+    "errorCode" : {
+        "description": "错误码",
+        "type": "integer",
+        "required": false
+    },
+    "message": {
+        "description": "错误信息",
+        "type": "string",
+        "required": false
+    },
+    "status": {
+        "description": "状态码",
+        "type": "integer",
+        "required": false
+    },
+    "timestamp": {
+        "description": "时间戳",
+        "type": "integer",
+        "required": false
+    }
+  }
+}
+</code></pre><h2>HTTP status code <a href="http://httpstatus.es/500" target="_blank">500</a></h2><p>服务端异常</p><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+  "description": "错误，请求错误时返回",
+  "required": false,
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "javaType" : "org.nextspace.platform.api.gateway.model.Error",
+  "type": "object",
+  "properties" :{
+    "errorCode" : {
+        "description": "错误码",
+        "type": "integer",
+        "required": false
+    },
+    "message": {
+        "description": "错误信息",
+        "type": "string",
+        "required": false
+    },
+    "status": {
+        "description": "状态码",
+        "type": "integer",
+        "required": false
+    },
+    "timestamp": {
+        "description": "时间戳",
+        "type": "integer",
+        "required": false
+    }
+  }
+}
+</code></pre></div><div class="tab-pane" id="members__member_id__orders__order_id__cancel_post_securedby"><h1>Secured by oauth_2_0</h1><h3>Headers</h3><ul><li><strong>Authorization</strong>: <em>(string)</em><p>通常发送一个有效的OAuth 2的access token.不要和queryParameters里的access_token同时使用</p></li></ul><h2>HTTP status code <a href="http://httpstatus.es/401" target="_blank">401</a></h2><p>错误或过期的token. 如果用户或Dropbox撤销或过期了访问令牌，就会发生这种情况。要解决此问题，您应该重新验证用户</p><h2>HTTP status code <a href="http://httpstatus.es/403" target="_blank">403</a></h2><p>错误的OAuth请求 (wrong consumer key, bad nonce, expired timestamp...). 不幸的是，重新验证用户也不会起作用</p></div></div></div></div></div></div></div><div class="panel panel-white"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_members__member_id__orders__order_id__delete"><span class="parent">/members/{member_id}/orders/{order_id}</span>/delete</a> <span class="methods"><a href="#members__member_id__orders__order_id__delete_post"><span class="badge badge_post">post <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span></a></span></h4></div><div id="panel_members__member_id__orders__order_id__delete" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#members__member_id__orders__order_id__delete_post'" class="list-group-item"><span class="badge badge_post">post <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span><div class="method_description"><p>删除订单</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="members__member_id__orders__order_id__delete_post"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_post">post <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span> <span class="parent">/members/{member_id}/orders/{order_id}</span>/delete</h4></div><div class="modal-body"><div class="alert alert-info"><p>删除订单</p></div><div class="alert alert-warning"><span class="glyphicon glyphicon-lock" title="Authentication required"></span> Secured by <b>oauth_2_0</b><p>系统支持 OAuth 2.0 来验证所有的APIs</p></div><ul class="nav nav-tabs"><li class="active"><a href="#members__member_id__orders__order_id__delete_post_request" data-toggle="tab">Request</a></li><li><a href="#members__member_id__orders__order_id__delete_post_response" data-toggle="tab">Response</a></li><li><a href="#members__member_id__orders__order_id__delete_post_securedby" data-toggle="tab">Security</a></li></ul><div class="tab-content"><div class="tab-pane active" id="members__member_id__orders__order_id__delete_post_request"><h3>URI Parameters</h3><ul><li><strong>member_id</strong>: <em>required (string)</em></li><li><strong>order_id</strong>: <em>required (string)</em></li></ul><h3>Headers</h3><ul><li><strong>x-la-authorization</strong>: <em>(string)</em><p>使用 oauth2.0 的方式获取access_token</p></li><li><strong>x-la-session</strong>: <em>(string)</em><p>当前用户的sessionId</p></li><li><strong>x-la-format</strong>: <em>required (one of json)</em><p>系统响应的数据格式，目前只有JSON一种</p></li><li><strong>x-la-app-key</strong>: <em>required (string)</em><p>系统分配给客户端的唯一标识</p></li><li><strong>x-la-sign-method</strong>: <em>required (one of MD5)</em><p>系统参数签名方式</p></li><li><strong>guid</strong>: <em>required (string)</em><p>用户ID</p></li></ul><h3>Query Parameters</h3><ul><li><strong>sign</strong>: <em>required (string)</em><p>对参数进行签名后的值，用来防止参数被篡改</p></li></ul></div><div class="tab-pane" id="members__member_id__orders__order_id__delete_post_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><p>请求成功</p><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "javaType" : "org.nextspace.platform.api.gateway.model.MemberOrderOperatorResult",
+  "type": "object",
+  "description": "会员订单操作结果",
+  "properties": {
+    "orderId": {
+      "description": "订单ID",
+      "type": "string",
+      "required": false
+    },
+    "channel": {
+      "description": "渠道",
+      "type": "string",
+      "required": false
+    },
+    "channelCode": {
+      "description": "渠道码",
+      "type": "string",
+      "required": false
+    },
+    "result": {
+      "description": "结果",
+      "type": "string",
+      "required": false
+    },
+    "errMessage": {
+      "description": "失败消息",
+      "type": "string",
+      "required": false
+    },
+    "nextActions": {
+      "description": "订单下一步动作",
+      "type": "string",
+      "required": false
+    }
+  }
+}
+</code></pre><h2>HTTP status code <a href="http://httpstatus.es/400" target="_blank">400</a></h2><p>参数格式不正确或参数个数不正确</p><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+  "description": "错误，请求错误时返回",
+  "required": false,
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "javaType" : "org.nextspace.platform.api.gateway.model.Error",
+  "type": "object",
+  "properties" :{
+    "errorCode" : {
+        "description": "错误码",
+        "type": "integer",
+        "required": false
+    },
+    "message": {
+        "description": "错误信息",
+        "type": "string",
+        "required": false
+    },
+    "status": {
+        "description": "状态码",
+        "type": "integer",
+        "required": false
+    },
+    "timestamp": {
+        "description": "时间戳",
+        "type": "integer",
+        "required": false
+    }
+  }
+}
+</code></pre><h2>HTTP status code <a href="http://httpstatus.es/401" target="_blank">401</a></h2><p>OAuth签名不正确</p><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+  "description": "错误，请求错误时返回",
+  "required": false,
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "javaType" : "org.nextspace.platform.api.gateway.model.Error",
+  "type": "object",
+  "properties" :{
+    "errorCode" : {
+        "description": "错误码",
+        "type": "integer",
+        "required": false
+    },
+    "message": {
+        "description": "错误信息",
+        "type": "string",
+        "required": false
+    },
+    "status": {
+        "description": "状态码",
+        "type": "integer",
+        "required": false
+    },
+    "timestamp": {
+        "description": "时间戳",
+        "type": "integer",
+        "required": false
+    }
+  }
+}
+</code></pre><h2>HTTP status code <a href="http://httpstatus.es/403" target="_blank">403</a></h2><p>对资源的访问被拒绝。通常这意味着当前请求被限制。也可能是你没有访问此资源的权限</p><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+  "description": "错误，请求错误时返回",
+  "required": false,
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "javaType" : "org.nextspace.platform.api.gateway.model.Error",
+  "type": "object",
+  "properties" :{
+    "errorCode" : {
+        "description": "错误码",
+        "type": "integer",
+        "required": false
+    },
+    "message": {
+        "description": "错误信息",
+        "type": "string",
+        "required": false
+    },
+    "status": {
+        "description": "状态码",
+        "type": "integer",
+        "required": false
+    },
+    "timestamp": {
+        "description": "时间戳",
+        "type": "integer",
+        "required": false
+    }
+  }
+}
+</code></pre><h2>HTTP status code <a href="http://httpstatus.es/404" target="_blank">404</a></h2><p>资源不存在或当前访问的资源对象不存在</p><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+  "description": "错误，请求错误时返回",
+  "required": false,
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "javaType" : "org.nextspace.platform.api.gateway.model.Error",
+  "type": "object",
+  "properties" :{
+    "errorCode" : {
+        "description": "错误码",
+        "type": "integer",
+        "required": false
+    },
+    "message": {
+        "description": "错误信息",
+        "type": "string",
+        "required": false
+    },
+    "status": {
+        "description": "状态码",
+        "type": "integer",
+        "required": false
+    },
+    "timestamp": {
+        "description": "时间戳",
+        "type": "integer",
+        "required": false
+    }
+  }
+}
+</code></pre><h2>HTTP status code <a href="http://httpstatus.es/500" target="_blank">500</a></h2><p>服务端异常</p><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+  "description": "错误，请求错误时返回",
+  "required": false,
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "javaType" : "org.nextspace.platform.api.gateway.model.Error",
+  "type": "object",
+  "properties" :{
+    "errorCode" : {
+        "description": "错误码",
+        "type": "integer",
+        "required": false
+    },
+    "message": {
+        "description": "错误信息",
+        "type": "string",
+        "required": false
+    },
+    "status": {
+        "description": "状态码",
+        "type": "integer",
+        "required": false
+    },
+    "timestamp": {
+        "description": "时间戳",
+        "type": "integer",
+        "required": false
+    }
+  }
+}
+</code></pre></div><div class="tab-pane" id="members__member_id__orders__order_id__delete_post_securedby"><h1>Secured by oauth_2_0</h1><h3>Headers</h3><ul><li><strong>Authorization</strong>: <em>(string)</em><p>通常发送一个有效的OAuth 2的access token.不要和queryParameters里的access_token同时使用</p></li></ul><h2>HTTP status code <a href="http://httpstatus.es/401" target="_blank">401</a></h2><p>错误或过期的token. 如果用户或Dropbox撤销或过期了访问令牌，就会发生这种情况。要解决此问题，您应该重新验证用户</p><h2>HTTP status code <a href="http://httpstatus.es/403" target="_blank">403</a></h2><p>错误的OAuth请求 (wrong consumer key, bad nonce, expired timestamp...). 不幸的是，重新验证用户也不会起作用</p></div></div></div></div></div></div></div><div class="panel panel-white"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_members__member_id__orders__order_id__confirmreceived"><span class="parent">/members/{member_id}/orders/{order_id}</span>/confirmreceived</a> <span class="methods"><a href="#members__member_id__orders__order_id__confirmreceived_post"><span class="badge badge_post">post <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span></a></span></h4></div><div id="panel_members__member_id__orders__order_id__confirmreceived" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#members__member_id__orders__order_id__confirmreceived_post'" class="list-group-item"><span class="badge badge_post">post <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span><div class="method_description"><p>确认订单收货</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="members__member_id__orders__order_id__confirmreceived_post"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_post">post <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span> <span class="parent">/members/{member_id}/orders/{order_id}</span>/confirmreceived</h4></div><div class="modal-body"><div class="alert alert-info"><p>确认订单收货</p></div><div class="alert alert-warning"><span class="glyphicon glyphicon-lock" title="Authentication required"></span> Secured by <b>oauth_2_0</b><p>系统支持 OAuth 2.0 来验证所有的APIs</p></div><ul class="nav nav-tabs"><li class="active"><a href="#members__member_id__orders__order_id__confirmreceived_post_request" data-toggle="tab">Request</a></li><li><a href="#members__member_id__orders__order_id__confirmreceived_post_response" data-toggle="tab">Response</a></li><li><a href="#members__member_id__orders__order_id__confirmreceived_post_securedby" data-toggle="tab">Security</a></li></ul><div class="tab-content"><div class="tab-pane active" id="members__member_id__orders__order_id__confirmreceived_post_request"><h3>URI Parameters</h3><ul><li><strong>member_id</strong>: <em>required (string)</em></li><li><strong>order_id</strong>: <em>required (string)</em></li></ul><h3>Headers</h3><ul><li><strong>x-la-authorization</strong>: <em>(string)</em><p>使用 oauth2.0 的方式获取access_token</p></li><li><strong>x-la-session</strong>: <em>(string)</em><p>当前用户的sessionId</p></li><li><strong>x-la-format</strong>: <em>required (one of json)</em><p>系统响应的数据格式，目前只有JSON一种</p></li><li><strong>x-la-app-key</strong>: <em>required (string)</em><p>系统分配给客户端的唯一标识</p></li><li><strong>x-la-sign-method</strong>: <em>required (one of MD5)</em><p>系统参数签名方式</p></li><li><strong>guid</strong>: <em>required (string)</em><p>用户ID</p></li></ul><h3>Query Parameters</h3><ul><li><strong>sign</strong>: <em>required (string)</em><p>对参数进行签名后的值，用来防止参数被篡改</p></li></ul><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
   "$schema": "http://json-schema.org/draft-03/schema",
   "javaType" : "org.nextspace.platform.api.gateway.model.MemberOrderConfirmReceived",
   "type": "object",
@@ -9879,6 +10257,11 @@
     },
     "refundImages": {
       "description": "退款理由图片",
+      "type": "string",
+      "required": false
+    },
+    "refundAmount": {
+      "description": "退款金额",
       "type": "string",
       "required": false
     }
@@ -10491,7 +10874,794 @@
   "status": 401,
   "timestamp": 1378122137646
 }
-</code></pre></div><div class="tab-pane" id="members__member_id__orders__order_id__refundreason_get_securedby"><h1>Secured by oauth_2_0</h1><h3>Headers</h3><ul><li><strong>Authorization</strong>: <em>(string)</em><p>通常发送一个有效的OAuth 2的access token.不要和queryParameters里的access_token同时使用</p></li></ul><h2>HTTP status code <a href="http://httpstatus.es/401" target="_blank">401</a></h2><p>错误或过期的token. 如果用户或Dropbox撤销或过期了访问令牌，就会发生这种情况。要解决此问题，您应该重新验证用户</p><h2>HTTP status code <a href="http://httpstatus.es/403" target="_blank">403</a></h2><p>错误的OAuth请求 (wrong consumer key, bad nonce, expired timestamp...). 不幸的是，重新验证用户也不会起作用</p></div></div></div></div></div></div></div><div class="panel panel-white"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_members_upload"><span class="parent">/members</span>/upload</a> <span class="methods"></span></h4></div><div id="panel_members_upload" class="panel-collapse collapse"><div class="panel-body"><div class="resource-description"><p>上传</p></div><div class="list-group"></div></div></div></div><div class="panel panel-white"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_members_upload_image"><span class="parent">/members/upload</span>/image</a> <span class="methods"><a href="#members_upload_image_post"><span class="badge badge_post">post <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span></a></span></h4></div><div id="panel_members_upload_image" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#members_upload_image_post'" class="list-group-item"><span class="badge badge_post">post <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span><div class="method_description"><p>上传图片，单张</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="members_upload_image_post"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_post">post <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span> <span class="parent">/members/upload</span>/image</h4></div><div class="modal-body"><div class="alert alert-info"><p>上传图片，单张</p></div><div class="alert alert-warning"><span class="glyphicon glyphicon-lock" title="Authentication required"></span> Secured by <b>oauth_2_0</b><p>系统支持 OAuth 2.0 来验证所有的APIs</p></div><ul class="nav nav-tabs"><li class="active"><a href="#members_upload_image_post_request" data-toggle="tab">Request</a></li><li><a href="#members_upload_image_post_response" data-toggle="tab">Response</a></li><li><a href="#members_upload_image_post_securedby" data-toggle="tab">Security</a></li></ul><div class="tab-content"><div class="tab-pane active" id="members_upload_image_post_request"><h3>Headers</h3><ul><li><strong>x-la-authorization</strong>: <em>(string)</em><p>使用 oauth2.0 的方式获取access_token</p></li><li><strong>x-la-session</strong>: <em>(string)</em><p>当前用户的sessionId</p></li><li><strong>x-la-format</strong>: <em>required (one of json)</em><p>系统响应的数据格式，目前只有JSON一种</p></li><li><strong>x-la-app-key</strong>: <em>required (string)</em><p>系统分配给客户端的唯一标识</p></li><li><strong>x-la-sign-method</strong>: <em>required (one of MD5)</em><p>系统参数签名方式</p></li><li><strong>guid</strong>: <em>required (string)</em><p>用户ID</p></li></ul><h3>Query Parameters</h3><ul><li><strong>sign</strong>: <em>required (string)</em><p>对参数进行签名后的值，用来防止参数被篡改</p></li></ul><h3>Body</h3><p><strong>Type: multipart/form-data</strong></p><strong>Form Parameters</strong><ul><li><strong>image</strong>: <em>(file)</em></li></ul></div><div class="tab-pane" id="members_upload_image_post_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><p>请求成功</p><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+</code></pre></div><div class="tab-pane" id="members__member_id__orders__order_id__refundreason_get_securedby"><h1>Secured by oauth_2_0</h1><h3>Headers</h3><ul><li><strong>Authorization</strong>: <em>(string)</em><p>通常发送一个有效的OAuth 2的access token.不要和queryParameters里的access_token同时使用</p></li></ul><h2>HTTP status code <a href="http://httpstatus.es/401" target="_blank">401</a></h2><p>错误或过期的token. 如果用户或Dropbox撤销或过期了访问令牌，就会发生这种情况。要解决此问题，您应该重新验证用户</p><h2>HTTP status code <a href="http://httpstatus.es/403" target="_blank">403</a></h2><p>错误的OAuth请求 (wrong consumer key, bad nonce, expired timestamp...). 不幸的是，重新验证用户也不会起作用</p></div></div></div></div></div></div></div><div class="panel panel-white"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_members__member_id__park"><span class="parent">/members/{member_id}</span>/park</a> <span class="methods"></span></h4></div><div id="panel_members__member_id__park" class="panel-collapse collapse"><div class="panel-body"><div class="resource-description"><p>停车</p></div><div class="list-group"></div></div></div></div><div class="panel panel-white"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_members__member_id__park_token"><span class="parent">/members/{member_id}/park</span>/token</a> <span class="methods"><a href="#members__member_id__park_token_get"><span class="badge badge_get">get <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span></a></span></h4></div><div id="panel_members__member_id__park_token" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#members__member_id__park_token_get'" class="list-group-item"><span class="badge badge_get">get <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span><div class="method_description"><p>请求登入停车token</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="members__member_id__park_token_get"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span> <span class="parent">/members/{member_id}/park</span>/token</h4></div><div class="modal-body"><div class="alert alert-info"><p>请求登入停车token</p></div><div class="alert alert-warning"><span class="glyphicon glyphicon-lock" title="Authentication required"></span> Secured by <b>oauth_2_0</b><p>系统支持 OAuth 2.0 来验证所有的APIs</p></div><ul class="nav nav-tabs"><li class="active"><a href="#members__member_id__park_token_get_request" data-toggle="tab">Request</a></li><li><a href="#members__member_id__park_token_get_response" data-toggle="tab">Response</a></li><li><a href="#members__member_id__park_token_get_securedby" data-toggle="tab">Security</a></li></ul><div class="tab-content"><div class="tab-pane active" id="members__member_id__park_token_get_request"><h3>URI Parameters</h3><ul><li><strong>member_id</strong>: <em>required (string)</em></li></ul><h3>Headers</h3><ul><li><strong>x-la-authorization</strong>: <em>(string)</em><p>使用 oauth2.0 的方式获取access_token</p></li><li><strong>x-la-session</strong>: <em>(string)</em><p>当前用户的sessionId</p></li><li><strong>x-la-format</strong>: <em>required (one of json)</em><p>系统响应的数据格式，目前只有JSON一种</p></li><li><strong>x-la-app-key</strong>: <em>required (string)</em><p>系统分配给客户端的唯一标识</p></li><li><strong>x-la-sign-method</strong>: <em>required (one of MD5)</em><p>系统参数签名方式</p></li><li><strong>guid</strong>: <em>required (string)</em><p>用户ID</p></li></ul><h3>Query Parameters</h3><ul><li><strong>sign</strong>: <em>required (string)</em><p>对参数进行签名后的值，用来防止参数被篡改</p></li></ul></div><div class="tab-pane" id="members__member_id__park_token_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><p>请求成功</p><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "javaType" : "org.nextspace.platform.api.gateway.model.MemberPark",
+  "type": "object",
+  "description": "停车认证",
+  "properties": {
+    "memberId": {
+      "description": "用户id",
+      "type": "string",
+      "required": false
+    },
+    "result": {
+      "description": "结果",
+      "type": "string",
+      "required": false
+    },
+    "token": {
+      "description": "token",
+      "type": "string",
+      "required": false
+    },
+    "message": {
+      "description": "结果描述",
+      "type": "string",
+      "required": false
+    }
+  }
+}
+</code></pre><h2>HTTP status code <a href="http://httpstatus.es/400" target="_blank">400</a></h2><p>参数格式不正确或参数个数不正确</p><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+  "description": "错误，请求错误时返回",
+  "required": false,
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "javaType" : "org.nextspace.platform.api.gateway.model.Error",
+  "type": "object",
+  "properties" :{
+    "errorCode" : {
+        "description": "错误码",
+        "type": "integer",
+        "required": false
+    },
+    "message": {
+        "description": "错误信息",
+        "type": "string",
+        "required": false
+    },
+    "status": {
+        "description": "状态码",
+        "type": "integer",
+        "required": false
+    },
+    "timestamp": {
+        "description": "时间戳",
+        "type": "integer",
+        "required": false
+    }
+  }
+}
+</code></pre><p><strong>Example</strong>:</p><pre><code>{
+  "errorCode": 0,
+  "message": "Invalid access token.",
+  "status": 401,
+  "timestamp": 1378122137646
+}
+</code></pre><h2>HTTP status code <a href="http://httpstatus.es/401" target="_blank">401</a></h2><p>OAuth签名不正确</p><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+  "description": "错误，请求错误时返回",
+  "required": false,
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "javaType" : "org.nextspace.platform.api.gateway.model.Error",
+  "type": "object",
+  "properties" :{
+    "errorCode" : {
+        "description": "错误码",
+        "type": "integer",
+        "required": false
+    },
+    "message": {
+        "description": "错误信息",
+        "type": "string",
+        "required": false
+    },
+    "status": {
+        "description": "状态码",
+        "type": "integer",
+        "required": false
+    },
+    "timestamp": {
+        "description": "时间戳",
+        "type": "integer",
+        "required": false
+    }
+  }
+}
+</code></pre><p><strong>Example</strong>:</p><pre><code>{
+  "errorCode": 0,
+  "message": "Invalid access token.",
+  "status": 401,
+  "timestamp": 1378122137646
+}
+</code></pre><h2>HTTP status code <a href="http://httpstatus.es/403" target="_blank">403</a></h2><p>对资源的访问被拒绝。通常这意味着当前请求被限制。也可能是你没有访问此资源的权限</p><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+  "description": "错误，请求错误时返回",
+  "required": false,
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "javaType" : "org.nextspace.platform.api.gateway.model.Error",
+  "type": "object",
+  "properties" :{
+    "errorCode" : {
+        "description": "错误码",
+        "type": "integer",
+        "required": false
+    },
+    "message": {
+        "description": "错误信息",
+        "type": "string",
+        "required": false
+    },
+    "status": {
+        "description": "状态码",
+        "type": "integer",
+        "required": false
+    },
+    "timestamp": {
+        "description": "时间戳",
+        "type": "integer",
+        "required": false
+    }
+  }
+}
+</code></pre><p><strong>Example</strong>:</p><pre><code>{
+  "errorCode": 0,
+  "message": "Invalid access token.",
+  "status": 401,
+  "timestamp": 1378122137646
+}
+</code></pre><h2>HTTP status code <a href="http://httpstatus.es/404" target="_blank">404</a></h2><p>资源不存在或当前访问的资源对象不存在</p><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+  "description": "错误，请求错误时返回",
+  "required": false,
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "javaType" : "org.nextspace.platform.api.gateway.model.Error",
+  "type": "object",
+  "properties" :{
+    "errorCode" : {
+        "description": "错误码",
+        "type": "integer",
+        "required": false
+    },
+    "message": {
+        "description": "错误信息",
+        "type": "string",
+        "required": false
+    },
+    "status": {
+        "description": "状态码",
+        "type": "integer",
+        "required": false
+    },
+    "timestamp": {
+        "description": "时间戳",
+        "type": "integer",
+        "required": false
+    }
+  }
+}
+</code></pre><p><strong>Example</strong>:</p><pre><code>{
+  "errorCode": 0,
+  "message": "Invalid access token.",
+  "status": 401,
+  "timestamp": 1378122137646
+}
+</code></pre><h2>HTTP status code <a href="http://httpstatus.es/500" target="_blank">500</a></h2><p>服务端异常</p><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+  "description": "错误，请求错误时返回",
+  "required": false,
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "javaType" : "org.nextspace.platform.api.gateway.model.Error",
+  "type": "object",
+  "properties" :{
+    "errorCode" : {
+        "description": "错误码",
+        "type": "integer",
+        "required": false
+    },
+    "message": {
+        "description": "错误信息",
+        "type": "string",
+        "required": false
+    },
+    "status": {
+        "description": "状态码",
+        "type": "integer",
+        "required": false
+    },
+    "timestamp": {
+        "description": "时间戳",
+        "type": "integer",
+        "required": false
+    }
+  }
+}
+</code></pre><p><strong>Example</strong>:</p><pre><code>{
+  "errorCode": 0,
+  "message": "Invalid access token.",
+  "status": 401,
+  "timestamp": 1378122137646
+}
+</code></pre></div><div class="tab-pane" id="members__member_id__park_token_get_securedby"><h1>Secured by oauth_2_0</h1><h3>Headers</h3><ul><li><strong>Authorization</strong>: <em>(string)</em><p>通常发送一个有效的OAuth 2的access token.不要和queryParameters里的access_token同时使用</p></li></ul><h2>HTTP status code <a href="http://httpstatus.es/401" target="_blank">401</a></h2><p>错误或过期的token. 如果用户或Dropbox撤销或过期了访问令牌，就会发生这种情况。要解决此问题，您应该重新验证用户</p><h2>HTTP status code <a href="http://httpstatus.es/403" target="_blank">403</a></h2><p>错误的OAuth请求 (wrong consumer key, bad nonce, expired timestamp...). 不幸的是，重新验证用户也不会起作用</p></div></div></div></div></div></div></div><div class="panel panel-white"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_members__member_id__park_plates"><span class="parent">/members/{member_id}/park</span>/plates</a> <span class="methods"><a href="#members__member_id__park_plates_get"><span class="badge badge_get">get <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span></a> <a href="#members__member_id__park_plates_post"><span class="badge badge_post">post <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span></a></span></h4></div><div id="panel_members__member_id__park_plates" class="panel-collapse collapse"><div class="panel-body"><div class="resource-description"><p>车牌号</p></div><div class="list-group"><div onclick="window.location.href = '#members__member_id__park_plates_get'" class="list-group-item"><span class="badge badge_get">get <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span><div class="method_description"><p>查询车牌号</p></div><div class="clearfix"></div></div><div onclick="window.location.href = '#members__member_id__park_plates_post'" class="list-group-item"><span class="badge badge_post">post <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span><div class="method_description"><p>添加车牌号</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="members__member_id__park_plates_get"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span> <span class="parent">/members/{member_id}/park</span>/plates</h4></div><div class="modal-body"><div class="alert alert-info"><p>查询车牌号</p></div><div class="alert alert-warning"><span class="glyphicon glyphicon-lock" title="Authentication required"></span> Secured by <b>oauth_2_0</b><p>系统支持 OAuth 2.0 来验证所有的APIs</p></div><ul class="nav nav-tabs"><li class="active"><a href="#members__member_id__park_plates_get_request" data-toggle="tab">Request</a></li><li><a href="#members__member_id__park_plates_get_response" data-toggle="tab">Response</a></li><li><a href="#members__member_id__park_plates_get_securedby" data-toggle="tab">Security</a></li></ul><div class="tab-content"><div class="tab-pane active" id="members__member_id__park_plates_get_request"><h3>URI Parameters</h3><ul><li><strong>member_id</strong>: <em>required (string)</em></li></ul><h3>Headers</h3><ul><li><strong>x-la-authorization</strong>: <em>(string)</em><p>使用 oauth2.0 的方式获取access_token</p></li><li><strong>x-la-session</strong>: <em>(string)</em><p>当前用户的sessionId</p></li><li><strong>x-la-format</strong>: <em>required (one of json)</em><p>系统响应的数据格式，目前只有JSON一种</p></li><li><strong>x-la-app-key</strong>: <em>required (string)</em><p>系统分配给客户端的唯一标识</p></li><li><strong>x-la-sign-method</strong>: <em>required (one of MD5)</em><p>系统参数签名方式</p></li><li><strong>guid</strong>: <em>required (string)</em><p>用户ID</p></li></ul><h3>Query Parameters</h3><ul><li><strong>count</strong>: <em>(integer - default: 10)</em><p>当前页所展示的数据个数</p><p><strong>Example</strong>:</p><pre><code>10</code></pre></li><li><strong>start</strong>: <em>(integer - default: 1)</em><p>开始页，默认从第一页开始</p><p><strong>Example</strong>:</p><pre><code>1</code></pre></li><li><strong>sign</strong>: <em>required (string)</em><p>对参数进行签名后的值，用来防止参数被篡改</p></li><li><strong>keywords</strong>: <em>(string)</em></li></ul></div><div class="tab-pane" id="members__member_id__park_plates_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><p>请求成功</p><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "javaType" : "org.nextspace.platform.api.gateway.model.MemberPlates",
+  "type": "object",
+  "description": "车牌号列表",
+  "properties": {
+    "plates": {
+      "description": "车牌号列表",
+      "type": "array",
+      "items":{
+        "$ref": "member-plate"
+      }
+    },
+    "totalCount": {
+      "description": "数量",
+      "type": "string",
+      "required": false
+    }
+  }
+}
+</code></pre><h2>HTTP status code <a href="http://httpstatus.es/400" target="_blank">400</a></h2><p>参数格式不正确或参数个数不正确</p><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+  "description": "错误，请求错误时返回",
+  "required": false,
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "javaType" : "org.nextspace.platform.api.gateway.model.Error",
+  "type": "object",
+  "properties" :{
+    "errorCode" : {
+        "description": "错误码",
+        "type": "integer",
+        "required": false
+    },
+    "message": {
+        "description": "错误信息",
+        "type": "string",
+        "required": false
+    },
+    "status": {
+        "description": "状态码",
+        "type": "integer",
+        "required": false
+    },
+    "timestamp": {
+        "description": "时间戳",
+        "type": "integer",
+        "required": false
+    }
+  }
+}
+</code></pre><p><strong>Example</strong>:</p><pre><code>{
+  "errorCode": 0,
+  "message": "Invalid access token.",
+  "status": 401,
+  "timestamp": 1378122137646
+}
+</code></pre><h2>HTTP status code <a href="http://httpstatus.es/401" target="_blank">401</a></h2><p>OAuth签名不正确</p><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+  "description": "错误，请求错误时返回",
+  "required": false,
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "javaType" : "org.nextspace.platform.api.gateway.model.Error",
+  "type": "object",
+  "properties" :{
+    "errorCode" : {
+        "description": "错误码",
+        "type": "integer",
+        "required": false
+    },
+    "message": {
+        "description": "错误信息",
+        "type": "string",
+        "required": false
+    },
+    "status": {
+        "description": "状态码",
+        "type": "integer",
+        "required": false
+    },
+    "timestamp": {
+        "description": "时间戳",
+        "type": "integer",
+        "required": false
+    }
+  }
+}
+</code></pre><p><strong>Example</strong>:</p><pre><code>{
+  "errorCode": 0,
+  "message": "Invalid access token.",
+  "status": 401,
+  "timestamp": 1378122137646
+}
+</code></pre><h2>HTTP status code <a href="http://httpstatus.es/403" target="_blank">403</a></h2><p>对资源的访问被拒绝。通常这意味着当前请求被限制。也可能是你没有访问此资源的权限</p><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+  "description": "错误，请求错误时返回",
+  "required": false,
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "javaType" : "org.nextspace.platform.api.gateway.model.Error",
+  "type": "object",
+  "properties" :{
+    "errorCode" : {
+        "description": "错误码",
+        "type": "integer",
+        "required": false
+    },
+    "message": {
+        "description": "错误信息",
+        "type": "string",
+        "required": false
+    },
+    "status": {
+        "description": "状态码",
+        "type": "integer",
+        "required": false
+    },
+    "timestamp": {
+        "description": "时间戳",
+        "type": "integer",
+        "required": false
+    }
+  }
+}
+</code></pre><p><strong>Example</strong>:</p><pre><code>{
+  "errorCode": 0,
+  "message": "Invalid access token.",
+  "status": 401,
+  "timestamp": 1378122137646
+}
+</code></pre><h2>HTTP status code <a href="http://httpstatus.es/404" target="_blank">404</a></h2><p>资源不存在或当前访问的资源对象不存在</p><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+  "description": "错误，请求错误时返回",
+  "required": false,
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "javaType" : "org.nextspace.platform.api.gateway.model.Error",
+  "type": "object",
+  "properties" :{
+    "errorCode" : {
+        "description": "错误码",
+        "type": "integer",
+        "required": false
+    },
+    "message": {
+        "description": "错误信息",
+        "type": "string",
+        "required": false
+    },
+    "status": {
+        "description": "状态码",
+        "type": "integer",
+        "required": false
+    },
+    "timestamp": {
+        "description": "时间戳",
+        "type": "integer",
+        "required": false
+    }
+  }
+}
+</code></pre><p><strong>Example</strong>:</p><pre><code>{
+  "errorCode": 0,
+  "message": "Invalid access token.",
+  "status": 401,
+  "timestamp": 1378122137646
+}
+</code></pre><h2>HTTP status code <a href="http://httpstatus.es/500" target="_blank">500</a></h2><p>服务端异常</p><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+  "description": "错误，请求错误时返回",
+  "required": false,
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "javaType" : "org.nextspace.platform.api.gateway.model.Error",
+  "type": "object",
+  "properties" :{
+    "errorCode" : {
+        "description": "错误码",
+        "type": "integer",
+        "required": false
+    },
+    "message": {
+        "description": "错误信息",
+        "type": "string",
+        "required": false
+    },
+    "status": {
+        "description": "状态码",
+        "type": "integer",
+        "required": false
+    },
+    "timestamp": {
+        "description": "时间戳",
+        "type": "integer",
+        "required": false
+    }
+  }
+}
+</code></pre><p><strong>Example</strong>:</p><pre><code>{
+  "errorCode": 0,
+  "message": "Invalid access token.",
+  "status": 401,
+  "timestamp": 1378122137646
+}
+</code></pre></div><div class="tab-pane" id="members__member_id__park_plates_get_securedby"><h1>Secured by oauth_2_0</h1><h3>Headers</h3><ul><li><strong>Authorization</strong>: <em>(string)</em><p>通常发送一个有效的OAuth 2的access token.不要和queryParameters里的access_token同时使用</p></li></ul><h2>HTTP status code <a href="http://httpstatus.es/401" target="_blank">401</a></h2><p>错误或过期的token. 如果用户或Dropbox撤销或过期了访问令牌，就会发生这种情况。要解决此问题，您应该重新验证用户</p><h2>HTTP status code <a href="http://httpstatus.es/403" target="_blank">403</a></h2><p>错误的OAuth请求 (wrong consumer key, bad nonce, expired timestamp...). 不幸的是，重新验证用户也不会起作用</p></div></div></div></div></div></div><div class="modal fade" tabindex="0" id="members__member_id__park_plates_post"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_post">post <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span> <span class="parent">/members/{member_id}/park</span>/plates</h4></div><div class="modal-body"><div class="alert alert-info"><p>添加车牌号</p></div><div class="alert alert-warning"><span class="glyphicon glyphicon-lock" title="Authentication required"></span> Secured by <b>oauth_2_0</b><p>系统支持 OAuth 2.0 来验证所有的APIs</p></div><ul class="nav nav-tabs"><li class="active"><a href="#members__member_id__park_plates_post_request" data-toggle="tab">Request</a></li><li><a href="#members__member_id__park_plates_post_response" data-toggle="tab">Response</a></li><li><a href="#members__member_id__park_plates_post_securedby" data-toggle="tab">Security</a></li></ul><div class="tab-content"><div class="tab-pane active" id="members__member_id__park_plates_post_request"><h3>URI Parameters</h3><ul><li><strong>member_id</strong>: <em>required (string)</em></li></ul><h3>Headers</h3><ul><li><strong>x-la-authorization</strong>: <em>(string)</em><p>使用 oauth2.0 的方式获取access_token</p></li><li><strong>x-la-session</strong>: <em>(string)</em><p>当前用户的sessionId</p></li><li><strong>x-la-format</strong>: <em>required (one of json)</em><p>系统响应的数据格式，目前只有JSON一种</p></li><li><strong>x-la-app-key</strong>: <em>required (string)</em><p>系统分配给客户端的唯一标识</p></li><li><strong>x-la-sign-method</strong>: <em>required (one of MD5)</em><p>系统参数签名方式</p></li><li><strong>guid</strong>: <em>required (string)</em><p>用户ID</p></li></ul><h3>Query Parameters</h3><ul><li><strong>sign</strong>: <em>required (string)</em><p>对参数进行签名后的值，用来防止参数被篡改</p></li></ul><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "javaType" : "org.nextspace.platform.api.gateway.model.MemberPlate",
+  "type": "object",
+  "description": "车牌号",
+  "properties": {
+    "plate": {
+      "description": "车牌号",
+      "type": "string",
+      "required": false
+    },
+    "plateType": {
+      "description": "车牌类型，1-新能源，0-否",
+      "type": "string",
+      "required": false
+    },
+    "addTime": {
+      "description": "添加时间",
+      "type": "string",
+      "required": false
+    },
+    "updateTime": {
+      "description": "修改时间",
+      "type": "string",
+      "required": false
+    },
+    "isDefault": {
+      "description": "是否问默认车牌，1-是，0-否",
+      "type": "string",
+      "required": false
+    },
+    "isDeleted": {
+      "description": "是否已删除车牌，1-是，0-否",
+      "type": "string",
+      "required": false
+    }
+  }
+}
+</code></pre></div><div class="tab-pane" id="members__member_id__park_plates_post_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><p>请求成功</p><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "javaType" : "org.nextspace.platform.api.gateway.model.MemberPlateOperateResult",
+  "type": "object",
+  "description": "车牌操作结果",
+  "properties": {
+    "plate": {
+      "description": "车牌号",
+      "type": "string",
+      "required": false
+    },
+    "result": {
+      "description": "结果",
+      "type": "string",
+      "required": false
+    },
+    "message": {
+      "description": "结果描述",
+      "type": "string",
+      "required": false
+    }
+  }
+}
+</code></pre><h2>HTTP status code <a href="http://httpstatus.es/400" target="_blank">400</a></h2><p>参数格式不正确或参数个数不正确</p><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+  "description": "错误，请求错误时返回",
+  "required": false,
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "javaType" : "org.nextspace.platform.api.gateway.model.Error",
+  "type": "object",
+  "properties" :{
+    "errorCode" : {
+        "description": "错误码",
+        "type": "integer",
+        "required": false
+    },
+    "message": {
+        "description": "错误信息",
+        "type": "string",
+        "required": false
+    },
+    "status": {
+        "description": "状态码",
+        "type": "integer",
+        "required": false
+    },
+    "timestamp": {
+        "description": "时间戳",
+        "type": "integer",
+        "required": false
+    }
+  }
+}
+</code></pre><h2>HTTP status code <a href="http://httpstatus.es/401" target="_blank">401</a></h2><p>OAuth签名不正确</p><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+  "description": "错误，请求错误时返回",
+  "required": false,
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "javaType" : "org.nextspace.platform.api.gateway.model.Error",
+  "type": "object",
+  "properties" :{
+    "errorCode" : {
+        "description": "错误码",
+        "type": "integer",
+        "required": false
+    },
+    "message": {
+        "description": "错误信息",
+        "type": "string",
+        "required": false
+    },
+    "status": {
+        "description": "状态码",
+        "type": "integer",
+        "required": false
+    },
+    "timestamp": {
+        "description": "时间戳",
+        "type": "integer",
+        "required": false
+    }
+  }
+}
+</code></pre><h2>HTTP status code <a href="http://httpstatus.es/403" target="_blank">403</a></h2><p>对资源的访问被拒绝。通常这意味着当前请求被限制。也可能是你没有访问此资源的权限</p><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+  "description": "错误，请求错误时返回",
+  "required": false,
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "javaType" : "org.nextspace.platform.api.gateway.model.Error",
+  "type": "object",
+  "properties" :{
+    "errorCode" : {
+        "description": "错误码",
+        "type": "integer",
+        "required": false
+    },
+    "message": {
+        "description": "错误信息",
+        "type": "string",
+        "required": false
+    },
+    "status": {
+        "description": "状态码",
+        "type": "integer",
+        "required": false
+    },
+    "timestamp": {
+        "description": "时间戳",
+        "type": "integer",
+        "required": false
+    }
+  }
+}
+</code></pre><h2>HTTP status code <a href="http://httpstatus.es/404" target="_blank">404</a></h2><p>资源不存在或当前访问的资源对象不存在</p><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+  "description": "错误，请求错误时返回",
+  "required": false,
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "javaType" : "org.nextspace.platform.api.gateway.model.Error",
+  "type": "object",
+  "properties" :{
+    "errorCode" : {
+        "description": "错误码",
+        "type": "integer",
+        "required": false
+    },
+    "message": {
+        "description": "错误信息",
+        "type": "string",
+        "required": false
+    },
+    "status": {
+        "description": "状态码",
+        "type": "integer",
+        "required": false
+    },
+    "timestamp": {
+        "description": "时间戳",
+        "type": "integer",
+        "required": false
+    }
+  }
+}
+</code></pre><h2>HTTP status code <a href="http://httpstatus.es/500" target="_blank">500</a></h2><p>服务端异常</p><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+  "description": "错误，请求错误时返回",
+  "required": false,
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "javaType" : "org.nextspace.platform.api.gateway.model.Error",
+  "type": "object",
+  "properties" :{
+    "errorCode" : {
+        "description": "错误码",
+        "type": "integer",
+        "required": false
+    },
+    "message": {
+        "description": "错误信息",
+        "type": "string",
+        "required": false
+    },
+    "status": {
+        "description": "状态码",
+        "type": "integer",
+        "required": false
+    },
+    "timestamp": {
+        "description": "时间戳",
+        "type": "integer",
+        "required": false
+    }
+  }
+}
+</code></pre></div><div class="tab-pane" id="members__member_id__park_plates_post_securedby"><h1>Secured by oauth_2_0</h1><h3>Headers</h3><ul><li><strong>Authorization</strong>: <em>(string)</em><p>通常发送一个有效的OAuth 2的access token.不要和queryParameters里的access_token同时使用</p></li></ul><h2>HTTP status code <a href="http://httpstatus.es/401" target="_blank">401</a></h2><p>错误或过期的token. 如果用户或Dropbox撤销或过期了访问令牌，就会发生这种情况。要解决此问题，您应该重新验证用户</p><h2>HTTP status code <a href="http://httpstatus.es/403" target="_blank">403</a></h2><p>错误的OAuth请求 (wrong consumer key, bad nonce, expired timestamp...). 不幸的是，重新验证用户也不会起作用</p></div></div></div></div></div></div></div><div class="panel panel-white"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_members__member_id__park_plates_default"><span class="parent">/members/{member_id}/park/plates</span>/default</a> <span class="methods"><a href="#members__member_id__park_plates_default_post"><span class="badge badge_post">post <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span></a></span></h4></div><div id="panel_members__member_id__park_plates_default" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#members__member_id__park_plates_default_post'" class="list-group-item"><span class="badge badge_post">post <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span><div class="method_description"><p>设置默认车牌</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="members__member_id__park_plates_default_post"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_post">post <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span> <span class="parent">/members/{member_id}/park/plates</span>/default</h4></div><div class="modal-body"><div class="alert alert-info"><p>设置默认车牌</p></div><div class="alert alert-warning"><span class="glyphicon glyphicon-lock" title="Authentication required"></span> Secured by <b>oauth_2_0</b><p>系统支持 OAuth 2.0 来验证所有的APIs</p></div><ul class="nav nav-tabs"><li class="active"><a href="#members__member_id__park_plates_default_post_request" data-toggle="tab">Request</a></li><li><a href="#members__member_id__park_plates_default_post_response" data-toggle="tab">Response</a></li><li><a href="#members__member_id__park_plates_default_post_securedby" data-toggle="tab">Security</a></li></ul><div class="tab-content"><div class="tab-pane active" id="members__member_id__park_plates_default_post_request"><h3>URI Parameters</h3><ul><li><strong>member_id</strong>: <em>required (string)</em></li></ul><h3>Headers</h3><ul><li><strong>x-la-authorization</strong>: <em>(string)</em><p>使用 oauth2.0 的方式获取access_token</p></li><li><strong>x-la-session</strong>: <em>(string)</em><p>当前用户的sessionId</p></li></ul><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "javaType" : "org.nextspace.platform.api.gateway.model.MemberPlate",
+  "type": "object",
+  "description": "车牌号",
+  "properties": {
+    "plate": {
+      "description": "车牌号",
+      "type": "string",
+      "required": false
+    },
+    "plateType": {
+      "description": "车牌类型，1-新能源，0-否",
+      "type": "string",
+      "required": false
+    },
+    "addTime": {
+      "description": "添加时间",
+      "type": "string",
+      "required": false
+    },
+    "updateTime": {
+      "description": "修改时间",
+      "type": "string",
+      "required": false
+    },
+    "isDefault": {
+      "description": "是否问默认车牌，1-是，0-否",
+      "type": "string",
+      "required": false
+    },
+    "isDeleted": {
+      "description": "是否已删除车牌，1-是，0-否",
+      "type": "string",
+      "required": false
+    }
+  }
+}
+</code></pre></div><div class="tab-pane" id="members__member_id__park_plates_default_post_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "javaType" : "org.nextspace.platform.api.gateway.model.MemberPlateOperateResult",
+  "type": "object",
+  "description": "车牌操作结果",
+  "properties": {
+    "plate": {
+      "description": "车牌号",
+      "type": "string",
+      "required": false
+    },
+    "result": {
+      "description": "结果",
+      "type": "string",
+      "required": false
+    },
+    "message": {
+      "description": "结果描述",
+      "type": "string",
+      "required": false
+    }
+  }
+}
+</code></pre></div><div class="tab-pane" id="members__member_id__park_plates_default_post_securedby"><h1>Secured by oauth_2_0</h1><h3>Headers</h3><ul><li><strong>Authorization</strong>: <em>(string)</em><p>通常发送一个有效的OAuth 2的access token.不要和queryParameters里的access_token同时使用</p></li></ul><h2>HTTP status code <a href="http://httpstatus.es/401" target="_blank">401</a></h2><p>错误或过期的token. 如果用户或Dropbox撤销或过期了访问令牌，就会发生这种情况。要解决此问题，您应该重新验证用户</p><h2>HTTP status code <a href="http://httpstatus.es/403" target="_blank">403</a></h2><p>错误的OAuth请求 (wrong consumer key, bad nonce, expired timestamp...). 不幸的是，重新验证用户也不会起作用</p></div></div></div></div></div></div></div><div class="panel panel-white"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_members__member_id__park_plates__plate_"><span class="parent">/members/{member_id}/park/plates</span>/{plate}</a> <span class="methods"><a href="#members__member_id__park_plates__plate__get"><span class="badge badge_get">get <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span></a> <a href="#members__member_id__park_plates__plate__patch"><span class="badge badge_patch">patch <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span></a> <a href="#members__member_id__park_plates__plate__delete"><span class="badge badge_delete">delete <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span></a></span></h4></div><div id="panel_members__member_id__park_plates__plate_" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#members__member_id__park_plates__plate__get'" class="list-group-item"><span class="badge badge_get">get <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span><div class="method_description"><p>查询车牌号</p></div><div class="clearfix"></div></div><div onclick="window.location.href = '#members__member_id__park_plates__plate__patch'" class="list-group-item"><span class="badge badge_patch">patch <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span><div class="method_description"><p>修改车牌号</p></div><div class="clearfix"></div></div><div onclick="window.location.href = '#members__member_id__park_plates__plate__delete'" class="list-group-item"><span class="badge badge_delete">delete <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span><div class="method_description"><p>删除车牌号</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="members__member_id__park_plates__plate__get"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span> <span class="parent">/members/{member_id}/park/plates</span>/{plate}</h4></div><div class="modal-body"><div class="alert alert-info"><p>查询车牌号</p></div><div class="alert alert-warning"><span class="glyphicon glyphicon-lock" title="Authentication required"></span> Secured by <b>oauth_2_0</b><p>系统支持 OAuth 2.0 来验证所有的APIs</p></div><ul class="nav nav-tabs"><li class="active"><a href="#members__member_id__park_plates__plate__get_request" data-toggle="tab">Request</a></li><li><a href="#members__member_id__park_plates__plate__get_response" data-toggle="tab">Response</a></li><li><a href="#members__member_id__park_plates__plate__get_securedby" data-toggle="tab">Security</a></li></ul><div class="tab-content"><div class="tab-pane active" id="members__member_id__park_plates__plate__get_request"><h3>URI Parameters</h3><ul><li><strong>member_id</strong>: <em>required (string)</em></li><li><strong>plate</strong>: <em>required (string)</em></li></ul><h3>Headers</h3><ul><li><strong>x-la-authorization</strong>: <em>(string)</em><p>使用 oauth2.0 的方式获取access_token</p></li><li><strong>x-la-session</strong>: <em>(string)</em><p>当前用户的sessionId</p></li></ul></div><div class="tab-pane" id="members__member_id__park_plates__plate__get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "javaType" : "org.nextspace.platform.api.gateway.model.MemberPlate",
+  "type": "object",
+  "description": "车牌号",
+  "properties": {
+    "plate": {
+      "description": "车牌号",
+      "type": "string",
+      "required": false
+    },
+    "plateType": {
+      "description": "车牌类型，1-新能源，0-否",
+      "type": "string",
+      "required": false
+    },
+    "addTime": {
+      "description": "添加时间",
+      "type": "string",
+      "required": false
+    },
+    "updateTime": {
+      "description": "修改时间",
+      "type": "string",
+      "required": false
+    },
+    "isDefault": {
+      "description": "是否问默认车牌，1-是，0-否",
+      "type": "string",
+      "required": false
+    },
+    "isDeleted": {
+      "description": "是否已删除车牌，1-是，0-否",
+      "type": "string",
+      "required": false
+    }
+  }
+}
+</code></pre></div><div class="tab-pane" id="members__member_id__park_plates__plate__get_securedby"><h1>Secured by oauth_2_0</h1><h3>Headers</h3><ul><li><strong>Authorization</strong>: <em>(string)</em><p>通常发送一个有效的OAuth 2的access token.不要和queryParameters里的access_token同时使用</p></li></ul><h2>HTTP status code <a href="http://httpstatus.es/401" target="_blank">401</a></h2><p>错误或过期的token. 如果用户或Dropbox撤销或过期了访问令牌，就会发生这种情况。要解决此问题，您应该重新验证用户</p><h2>HTTP status code <a href="http://httpstatus.es/403" target="_blank">403</a></h2><p>错误的OAuth请求 (wrong consumer key, bad nonce, expired timestamp...). 不幸的是，重新验证用户也不会起作用</p></div></div></div></div></div></div><div class="modal fade" tabindex="0" id="members__member_id__park_plates__plate__patch"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_patch">patch <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span> <span class="parent">/members/{member_id}/park/plates</span>/{plate}</h4></div><div class="modal-body"><div class="alert alert-info"><p>修改车牌号</p></div><div class="alert alert-warning"><span class="glyphicon glyphicon-lock" title="Authentication required"></span> Secured by <b>oauth_2_0</b><p>系统支持 OAuth 2.0 来验证所有的APIs</p></div><ul class="nav nav-tabs"><li class="active"><a href="#members__member_id__park_plates__plate__patch_request" data-toggle="tab">Request</a></li><li><a href="#members__member_id__park_plates__plate__patch_response" data-toggle="tab">Response</a></li><li><a href="#members__member_id__park_plates__plate__patch_securedby" data-toggle="tab">Security</a></li></ul><div class="tab-content"><div class="tab-pane active" id="members__member_id__park_plates__plate__patch_request"><h3>URI Parameters</h3><ul><li><strong>member_id</strong>: <em>required (string)</em></li><li><strong>plate</strong>: <em>required (string)</em></li></ul><h3>Headers</h3><ul><li><strong>x-la-authorization</strong>: <em>(string)</em><p>使用 oauth2.0 的方式获取access_token</p></li><li><strong>x-la-session</strong>: <em>(string)</em><p>当前用户的sessionId</p></li></ul><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "javaType" : "org.nextspace.platform.api.gateway.model.MemberPlate",
+  "type": "object",
+  "description": "车牌号",
+  "properties": {
+    "plate": {
+      "description": "车牌号",
+      "type": "string",
+      "required": false
+    },
+    "plateType": {
+      "description": "车牌类型，1-新能源，0-否",
+      "type": "string",
+      "required": false
+    },
+    "addTime": {
+      "description": "添加时间",
+      "type": "string",
+      "required": false
+    },
+    "updateTime": {
+      "description": "修改时间",
+      "type": "string",
+      "required": false
+    },
+    "isDefault": {
+      "description": "是否问默认车牌，1-是，0-否",
+      "type": "string",
+      "required": false
+    },
+    "isDeleted": {
+      "description": "是否已删除车牌，1-是，0-否",
+      "type": "string",
+      "required": false
+    }
+  }
+}
+</code></pre></div><div class="tab-pane" id="members__member_id__park_plates__plate__patch_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "javaType" : "org.nextspace.platform.api.gateway.model.MemberPlateOperateResult",
+  "type": "object",
+  "description": "车牌操作结果",
+  "properties": {
+    "plate": {
+      "description": "车牌号",
+      "type": "string",
+      "required": false
+    },
+    "result": {
+      "description": "结果",
+      "type": "string",
+      "required": false
+    },
+    "message": {
+      "description": "结果描述",
+      "type": "string",
+      "required": false
+    }
+  }
+}
+</code></pre></div><div class="tab-pane" id="members__member_id__park_plates__plate__patch_securedby"><h1>Secured by oauth_2_0</h1><h3>Headers</h3><ul><li><strong>Authorization</strong>: <em>(string)</em><p>通常发送一个有效的OAuth 2的access token.不要和queryParameters里的access_token同时使用</p></li></ul><h2>HTTP status code <a href="http://httpstatus.es/401" target="_blank">401</a></h2><p>错误或过期的token. 如果用户或Dropbox撤销或过期了访问令牌，就会发生这种情况。要解决此问题，您应该重新验证用户</p><h2>HTTP status code <a href="http://httpstatus.es/403" target="_blank">403</a></h2><p>错误的OAuth请求 (wrong consumer key, bad nonce, expired timestamp...). 不幸的是，重新验证用户也不会起作用</p></div></div></div></div></div></div><div class="modal fade" tabindex="0" id="members__member_id__park_plates__plate__delete"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_delete">delete <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span> <span class="parent">/members/{member_id}/park/plates</span>/{plate}</h4></div><div class="modal-body"><div class="alert alert-info"><p>删除车牌号</p></div><div class="alert alert-warning"><span class="glyphicon glyphicon-lock" title="Authentication required"></span> Secured by <b>oauth_2_0</b><p>系统支持 OAuth 2.0 来验证所有的APIs</p></div><ul class="nav nav-tabs"><li class="active"><a href="#members__member_id__park_plates__plate__delete_request" data-toggle="tab">Request</a></li><li><a href="#members__member_id__park_plates__plate__delete_response" data-toggle="tab">Response</a></li><li><a href="#members__member_id__park_plates__plate__delete_securedby" data-toggle="tab">Security</a></li></ul><div class="tab-content"><div class="tab-pane active" id="members__member_id__park_plates__plate__delete_request"><h3>URI Parameters</h3><ul><li><strong>member_id</strong>: <em>required (string)</em></li><li><strong>plate</strong>: <em>required (string)</em></li></ul><h3>Headers</h3><ul><li><strong>x-la-authorization</strong>: <em>(string)</em><p>使用 oauth2.0 的方式获取access_token</p></li><li><strong>x-la-session</strong>: <em>(string)</em><p>当前用户的sessionId</p></li></ul></div><div class="tab-pane" id="members__member_id__park_plates__plate__delete_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "javaType" : "org.nextspace.platform.api.gateway.model.MemberPlateOperateResult",
+  "type": "object",
+  "description": "车牌操作结果",
+  "properties": {
+    "plate": {
+      "description": "车牌号",
+      "type": "string",
+      "required": false
+    },
+    "result": {
+      "description": "结果",
+      "type": "string",
+      "required": false
+    },
+    "message": {
+      "description": "结果描述",
+      "type": "string",
+      "required": false
+    }
+  }
+}
+</code></pre></div><div class="tab-pane" id="members__member_id__park_plates__plate__delete_securedby"><h1>Secured by oauth_2_0</h1><h3>Headers</h3><ul><li><strong>Authorization</strong>: <em>(string)</em><p>通常发送一个有效的OAuth 2的access token.不要和queryParameters里的access_token同时使用</p></li></ul><h2>HTTP status code <a href="http://httpstatus.es/401" target="_blank">401</a></h2><p>错误或过期的token. 如果用户或Dropbox撤销或过期了访问令牌，就会发生这种情况。要解决此问题，您应该重新验证用户</p><h2>HTTP status code <a href="http://httpstatus.es/403" target="_blank">403</a></h2><p>错误的OAuth请求 (wrong consumer key, bad nonce, expired timestamp...). 不幸的是，重新验证用户也不会起作用</p></div></div></div></div></div></div></div><div class="panel panel-white"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_members_upload"><span class="parent">/members</span>/upload</a> <span class="methods"></span></h4></div><div id="panel_members_upload" class="panel-collapse collapse"><div class="panel-body"><div class="resource-description"><p>上传</p></div><div class="list-group"></div></div></div></div><div class="panel panel-white"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_members_upload_image"><span class="parent">/members/upload</span>/image</a> <span class="methods"><a href="#members_upload_image_post"><span class="badge badge_post">post <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span></a></span></h4></div><div id="panel_members_upload_image" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#members_upload_image_post'" class="list-group-item"><span class="badge badge_post">post <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span><div class="method_description"><p>上传图片，单张</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="members_upload_image_post"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_post">post <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span> <span class="parent">/members/upload</span>/image</h4></div><div class="modal-body"><div class="alert alert-info"><p>上传图片，单张</p></div><div class="alert alert-warning"><span class="glyphicon glyphicon-lock" title="Authentication required"></span> Secured by <b>oauth_2_0</b><p>系统支持 OAuth 2.0 来验证所有的APIs</p></div><ul class="nav nav-tabs"><li class="active"><a href="#members_upload_image_post_request" data-toggle="tab">Request</a></li><li><a href="#members_upload_image_post_response" data-toggle="tab">Response</a></li><li><a href="#members_upload_image_post_securedby" data-toggle="tab">Security</a></li></ul><div class="tab-content"><div class="tab-pane active" id="members_upload_image_post_request"><h3>Headers</h3><ul><li><strong>x-la-authorization</strong>: <em>(string)</em><p>使用 oauth2.0 的方式获取access_token</p></li><li><strong>x-la-session</strong>: <em>(string)</em><p>当前用户的sessionId</p></li><li><strong>x-la-format</strong>: <em>required (one of json)</em><p>系统响应的数据格式，目前只有JSON一种</p></li><li><strong>x-la-app-key</strong>: <em>required (string)</em><p>系统分配给客户端的唯一标识</p></li><li><strong>x-la-sign-method</strong>: <em>required (one of MD5)</em><p>系统参数签名方式</p></li><li><strong>guid</strong>: <em>required (string)</em><p>用户ID</p></li></ul><h3>Query Parameters</h3><ul><li><strong>sign</strong>: <em>required (string)</em><p>对参数进行签名后的值，用来防止参数被篡改</p></li></ul><h3>Body</h3><p><strong>Type: multipart/form-data</strong></p><strong>Form Parameters</strong><ul><li><strong>image</strong>: <em>(file)</em></li></ul></div><div class="tab-pane" id="members_upload_image_post_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><p>请求成功</p><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
   "required": true,
   "$schema": "http://json-schema.org/draft-03/schema",
   "javaType" : "org.nextspace.platform.api.gateway.model.ImageFile",
