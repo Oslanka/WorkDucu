@@ -26,4 +26,5 @@ root hadoop
 
 
 分之2
+
 切回master
